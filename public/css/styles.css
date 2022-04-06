@@ -1,0 +1,379 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-lines: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+div.top-header{
+    padding: 5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+header div.logo{
+    width: 50%;
+    
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header nav{
+    display: none;
+    font-size: 12px;
+}
+
+header nav ul li{
+    list-style-type: none;
+    padding: 3px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 25px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 25px;
+}
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+main section article{
+    background-color: #fff;
+    margin: 10px 0px;
+}
+main section article img{
+    width: 100%;
+}
+
+main section article div.main-article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    color:#39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    top: -15px;
+    transition: transform, 1s;
+}
+
+main section article .discount{
+    color: #39b54a;
+}
+
+main section h3{
+    font-size: 24px;
+}
+.price{
+    font-size: 18px;
+    flex: 30%;
+}
+.discount{
+    font-size: 16px;
+    font-weight: normal;
+    flex: 70%;
+}
+.description{
+    display: none;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+h3,
+.description{
+    color: #666;
+}
+
+.register-section{
+    display: flex;
+}
+
+.login-section{
+    display:flex;
+   
+}
+
+section .formu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    max-width: 800px;
+}
+
+section .formu .input-element{
+    
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.perfil{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+
+.intereses{
+    width: 70%;
+    display: flex;
+}
+
+.intereses label{
+    align-items: center;
+
+}
+
+section .formu .input-element input{
+    width: 70%;
+    height: 25px;
+}
+section .formu .input-element label{
+    width: 30%;
+    height: 25px;
+}
+
+
+section .formu button{
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: #0044AA;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 25px;
+    transition: background, 500ms;
+}
+
+section .formu button:hover{
+    background: #39b54a;
+}
+
+section .formu button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+section .formu button a:visited{
+    color: white;
+}
+
+.login-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer div i{
+    color:#0044AA;
+    font-size: 2em;
+    margin: 10px;
+}
+
+footer div i:hover{
+    color:#39b54a;
+}
+
+footer h4{
+    font-size: 16px;
+}
+
+footer article {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-top: solid 1px gray;
+}
+
+footer article .footer-component{
+    width: 30%;
+}
+
+
+@media (min-width:361px){
+    
+    .description{
+    display: none;
+    }
+    header nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header .left-navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 40%;
+    }
+    header .rigth-navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 40%;
+    }
+
+
+    .burger-menu{
+        display: none;
+    }
+
+    main section article{
+    width: 45%;
+    }
+
+    main section .products{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    div.top-header{
+        padding: 5%;
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    header div.logo{
+        width: 30%; 
+    }
+    header .form{
+        width: 30%;
+    }
+    header div.top-header p{
+        width: 30%;
+    }
+
+    main section article:hover .main-article .description{
+       display: block;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article:hover i {
+        transform: rotate(-90deg);
+
+    }
+       
+}
+
+@media (min-width:769px){
+    .description{
+        display: none;
+        }
+        main section article{
+            width: 22%;
+        }
+        .burger-menu{
+            display: none;
+        }
+
+        main section .products{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        
+        }
+        main section article:hover .main-article .description{
+            display: block;
+         }
+     
+         main section article:hover{
+             box-shadow: 0px 0px 10px rgb(100, 100, 100);
+         }
+
+         main section article:hover i {
+            transform: rotate(-90deg);
+    
+        }
+
+}
